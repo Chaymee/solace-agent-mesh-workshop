@@ -356,7 +356,198 @@ Yes, we’ll discuss the role of Event Mesh in Solace Agent Mesh during the sess
 
 ---
 
-### ✅ That’s It!
+## 🔗 10. Connect External Agents with A2A Proxy
+
+Solace Agent Mesh supports **Agent-to-Agent (A2A) proxies** to integrate external agentic frameworks like AWS Bedrock Agents, Azure AI Agent Service, or custom REST-based agents into your mesh.
+
+### What is an A2A Proxy?
+
+An A2A proxy acts as a bridge between SAM and external agent frameworks. Instead of rewriting agents in Python, you can expose existing agents through SAM's event-driven architecture.
+
+**Use cases:**
+- Connect enterprise agents built on AWS, Azure, or Google platforms
+- Integrate legacy AI services without code rewrites
+- Enable cross-platform agent collaboration
+
+### Steps to Add Your First A2A Agent
+
+1. In a new terminal, navigate to your SAM workspace:
+   ```bash
+   cd sam-bootcamp
+   source venv/bin/activate
+   ```
+
+2. Create a proxy configuration:
+   ```bash
+   sam add agent --gui
+   ```
+
+3. In the agent setup wizard:
+   - **Name:** `AWS Travel Assistant`
+   - **Agent Type:** Select **A2A Proxy**
+   - **Endpoint URL:** `<Your-AWS-Bedrock-Agent-Endpoint>` (provided during workshop)
+   - **Authentication:** Configure API key/credentials as needed
+   - **Description:** `Travel planning and recommendations agent`
+
+4. Save and restart agents:
+   ```bash
+   sam run
+   ```
+
+### Try It Out
+
+In the SAM chat, ask:
+```
+Plan a 3-day trip to Tokyo with must-see attractions
+```
+
+The orchestrator will route the request to your AWS Travel Assistant via the A2A proxy!
+
+> 📖 **Learn more:** [SAM Proxy Documentation](https://solacelabs.github.io/solace-agent-mesh/docs/documentation/components/proxies)
+
+---
+
+## 🌟 11. Add More A2A Agents
+
+Now that you've connected one external agent, let's add more for richer interactions.
+
+### Available Pre-Hosted Agents
+
+During the workshop, you have access to these pre-hosted agents:
+
+1. **Azure Recipe Generator** (Azure AI Agent Service)
+   - Endpoint: `<Azure-Endpoint>` (provided during workshop)
+   - Capability: Creates recipes based on ingredients and dietary preferences
+
+2. **Google Code Reviewer** (Custom REST Agent)
+   - Endpoint: `<Google-Endpoint>` (provided during workshop)
+   - Capability: Reviews code snippets and suggests improvements
+
+### Quick Setup
+
+For each agent, repeat the proxy setup:
+
+```bash
+sam add agent --gui
+```
+
+Configure each with:
+- Unique name (e.g., `Recipe Generator`, `Code Reviewer`)
+- Agent Type: **A2A Proxy**
+- Endpoint URL and credentials (provided)
+- Clear description of capabilities
+
+### Manual Configuration (No GUI)
+
+Prefer working with config files? Create a YAML file in `config/agents/`:
+
+**Example: `config/agents/recipe_generator.yaml`**
+```yaml
+name: Recipe Generator
+component_type: a2a_proxy
+component_config:
+  endpoint_url: https://your-azure-endpoint.azurewebsites.net/api/invoke
+  authentication:
+    type: api_key
+    api_key: ${AZURE_API_KEY}
+  description: Creates recipes based on ingredients and dietary preferences
+  input_schema:
+    type: object
+    properties:
+      query:
+        type: string
+        description: User's recipe request with ingredients
+  output_schema:
+    type: object
+    properties:
+      response:
+        type: string
+        description: Generated recipe with instructions
+```
+
+Then run:
+```bash
+sam run config/agents/recipe_generator.yaml
+```
+
+> 💡 **Tip:** Use environment variables for sensitive credentials like `${AZURE_API_KEY}` instead of hardcoding them
+
+### Example Interactions
+
+**Recipe Generator:**
+```
+I have chicken, tomatoes, and basil. What can I make?
+```
+
+**Code Reviewer:**
+```
+Review this Python function for best practices:
+def calc(x,y):
+    return x+y
+```
+
+### Fun Agent Ideas to Build
+
+Want to host your own? Consider building:
+- **Fitness Coach:** Workout plans and nutrition advice
+- **Meeting Summarizer:** Digest meeting notes and action items
+- **Bug Bounty Hunter:** Analyzes code for security vulnerabilities
+- **Dad Joke Generator:** Because every mesh needs humor 😄
+
+> 💡 **Tip:** Deploy agents using AWS Lambda, Azure Functions, or simple Flask APIs
+
+---
+
+## 🚀 12. Bring Your Own Agents
+
+Ready to integrate your organization's agents? SAM supports any framework with a REST/HTTP interface.
+
+### Supported Frameworks
+
+- **AWS Bedrock Agents** (Action Groups, Knowledge Bases)
+- **Azure AI Agent Service** (Copilot Studio, Azure OpenAI Assistants)
+- **Google Vertex AI Agents**
+- **LangChain/LangGraph agents** (via REST wrapper)
+- **Semantic Kernel agents**
+- **Custom REST APIs**
+
+### Integration Steps
+
+1. **Expose your agent** via HTTP endpoint (GET/POST)
+2. **Document the schema** (input/output format)
+3. **Add to SAM** using `sam add agent --gui` → A2A Proxy
+4. **Test connectivity** before deploying to production
+
+### Example: Custom LangChain Agent
+
+If you have a LangChain agent, wrap it with FastAPI:
+
+```python
+from fastapi import FastAPI
+from langchain import Agent
+
+app = FastAPI()
+
+@app.post("/invoke")
+async def invoke_agent(query: str):
+    result = my_langchain_agent.run(query)
+    return {"response": result}
+```
+
+Then add to SAM with endpoint: `https://your-domain.com/invoke`
+
+### 🎯 Challenge
+
+Before the workshop ends:
+1. Connect at least **2 A2A agents** to your SAM instance
+2. Create a **multi-agent workflow** (e.g., "Plan a trip, then create recipes for the destination")
+3. Share your coolest agent interaction in the workshop chat!
+
+> 🔧 **Need help?** Ask in [Solace Community](https://community.solace.com/c/solace-agent-mesh/16) or during the workshop Q&A.
+
+---
+
+### ✅ That's It!
 You’ve successfully:  
 - Set up GitHub Codespaces  
 - Installed and initialized Solace Agent Mesh  
