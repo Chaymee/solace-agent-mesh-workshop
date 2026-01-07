@@ -118,7 +118,8 @@ Credentials you will need later for Solace Agent Mesh Setup
 - Choose **OpenAI Compatible Provider**
 - Set **LLM Endpoint URL** to `https://lite-llm.mymaas.net`
 - Enter the **LLM API Key** shared during the workshop
-- Select **bedrock-anthropic-claude-3-5-sonnet** from the model dropdown
+- Select **vertex-claude-4-5-sonnet** from the model dropdown
+
   <img src="../sam/020-sam-init-4.png" alt="Sam Initialize - 4" style="display: block; margin: 20px auto; max-width: 70%; box-shadow: 0 4px 8px rgba(0,0,0,0.2); border-radius: 4px;">
 
 5. Configure the orchestrator agent
