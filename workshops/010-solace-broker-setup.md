@@ -1,6 +1,6 @@
 # 010 Local Solace Broker Setup (Codespaces Broker)
 
-The Solace Agent Mesh Workshop Codespaces deployment comes with a Solace Broker deployed locally in the Codespace. You can leverage this local broker or you can use a Solace Cloud broker trial or enterprise account
+The [Solace Agent Mesh Workshop ](https://github.com/SolaceDev/solace-developer-workshops) Codespaces deployment comes with a Solace Broker deployed locally in the Codespace. You can leverage this local broker or you can use a Solace Cloud broker trial or enterprise account
 ## Local Broker
 **Local Broker will start automatically with codespace deployment**
 Credentials you will need later for Solace Agent Mesh Setup
