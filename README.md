@@ -1,24 +1,18 @@
 # Solace Agent Mesh Workshop
 
-Welcome to the **Solace Agent Mesh (SAM)** workshop! This repository contains comprehensive guides and resources to help you set up and explore SAM — Solace's innovative agent-based event-driven architecture platform.
+Welcome to the **Solace Agent Mesh** workshop! This repository contains comprehensive guides and resources to help you set up and explore Solace Agent Mesh, an open source event-driven agent orchestration frameowrk.
 
----
-##### 
-##### <center>STAR the Solace Agent Mesh GitHub Repository! </center>
-##### <center>Take a moment to visit:</center>
-##### <center>https://github.com/SolaceLabs/solace-agent-mesh/</center>
-##### <center>And, hit that STAR button :)</center>
-##### 
+⭐️ Take a moment to check out the open source repo and give it a star! [https://github.com/SolaceLabs/solace-agent-mesh](https://github.com/SolaceLabs/solace-agent-mesh)
 
 
 ---
-## IMPORTANT URLS
+## Resources
 
-##### - [Solace Workshop](https://github.com/SolaceDev/solace-developer-workshops/)
-##### - [Solace Agent Mesh](https://github.com/solacelabs/solace-agent-mesh)
-##### - [Solace Agent Mesh Docs](https://solacelabs.github.io/solace-agent-mesh/docs/documentation/getting-started/introduction/)
-##### - [Solace Agent Mesh Core Plugins](https://github.com/SolaceLabs/solace-agent-mesh-core-plugins)
-##### - [Solace Agent Mesh Community Plugins](https://github.com/solacecommunity/solace-agent-mesh-plugins/)
+- [Solace Workshop Virtual Environment](https://github.com/SolaceDev/solace-developer-workshops/)
+- [Solace Agent Mesh Githiub Repository](https://github.com/solacelabs/solace-agent-mesh)
+- [Solace Agent Mesh Docs](https://solacelabs.github.io/solace-agent-mesh/docs/documentation/getting-started/introduction/)
+- [Solace Agent Mesh Core Plugins](https://github.com/SolaceLabs/solace-agent-mesh-core-plugins)
+- [Solace Agent Mesh Community Plugins](https://github.com/solacecommunity/solace-agent-mesh-plugins/)
 
 
 --- 
@@ -30,24 +24,6 @@ This workshop teaches you how to:
 - Install and initialize Solace Agent Mesh
 - Deploy and interact with AI-powered agents
 - Explore agent-to-agent (A2A) communication
-
-## 📁 Repository Structure
-
-```
-├── README.md                           # This file
-├── solace-cloud-signup-workshop.md     # Step-by-step Solace Cloud setup
-├── solace-agent-mesh-workshop.md       # Complete SAM installation guide
-├── broker/                             # Screenshots for broker setup
-│   ├── login-page.png
-│   ├── signup-page.png
-│   ├── create-service.png
-│   └── ...
-└── sam/                               # Screenshots for SAM setup
-    ├── github-workshop-repo.png
-    ├── sam-init.png
-    ├── sam-chat.png
-    └── ...
-```
 
 ## 🚀 Quick Start
 
@@ -61,16 +37,16 @@ This workshop teaches you how to:
 #### 1. Solace Cloud Setup
 Follow the guide: [`solace-cloud-signup-workshop.md`](./solace-cloud-signup-workshop.md)
 - Create your Solace Cloud account
-- Set up a PubSub+ broker service
+- Set up a cloud Broker service
 - Configure connection details
 
-#### 2. SAM Installation & Configuration
+#### 2. Solace Agent Mesh Installation & Configuration
 Follow the guide: [`solace-agent-mesh-workshop.md`](./solace-agent-mesh-workshop.md)
 - Launch GitHub Codespaces
 - Install Solace Agent Mesh CLI
-- Initialize SAM with your broker
+- Initialize Solace Agent Mesh with your broker
 - Configure AI provider settings
-- Start your SAM instance
+- Start your Solace Agent Mesh instance
 
 ## 🛠️ What You'll Learn
 
@@ -98,11 +74,11 @@ Follow the guide: [`solace-agent-mesh-workshop.md`](./solace-agent-mesh-workshop
 
 ### Documentation
 - [`solace-cloud-signup-workshop.md`](./solace-cloud-signup-workshop.md) - Complete broker setup
-- [`solace-agent-mesh-workshop.md`](./solace-agent-mesh-workshop.md) - SAM installation guide
+- [`solace-agent-mesh-workshop.md`](./solace-agent-mesh-workshop.md) - Solace Agent Mesh installation guide
 
 ### Visual Resources
 - **broker/** - Step-by-step screenshots for Solace Cloud setup
-- **sam/** - Visual guide for GitHub Codespaces and SAM configuration
+- **Solace Agent Mesh/** - Visual guide for GitHub Codespaces and Solace Agent Mesh configuration
 
 ## 🔧 Technical Requirements
 
@@ -112,7 +88,7 @@ Follow the guide: [`solace-agent-mesh-workshop.md`](./solace-agent-mesh-workshop
 - **Machine Type**: 4-core Codespace instance recommended
 
 ### Services Used
-- **Solace Cloud**: PubSub+ broker service (Developer tier)
+- **Solace Cloud**: Solace broker service (Developer tier)
 - **GitHub Codespaces**: Cloud development environment
 - **OpenAI Compatible LLM**: AI provider for agent capabilities
 
@@ -129,12 +105,12 @@ By completing this workshop, you will:
 
 ### During the Workshop
 - Ask instructors for assistance
-- Use the chat interface in SAM for agent capabilities
+- Use the chat interface in Solace Agent Mesh for agent capabilities
 - Refer to visual guides in the screenshots folders
 
 ### Additional Resources
 - [Solace Developer Portal](https://solace.dev)
-- [SAM Documentation](https://docs.solace.com/Solace-Agent-Mesh/)
+- [Solace Agent Mesh Documentation](https://docs.solace.com/Solace-Agent-Mesh/)
 - [GitHub Codespaces Docs](https://docs.github.com/en/codespaces)
 
 ## 📝 Workshop Flow
@@ -144,11 +120,11 @@ graph TD
     A[Create GitHub Account] --> B[Setup Solace Cloud]
     B --> C[Create Broker Service]
     C --> D[Launch Codespaces]
-    D --> E[Install SAM CLI]
-    E --> F[Initialize SAM]
+    D --> E[Install Solace Agent Mesh CLI]
+    E --> F[Initialize Solace Agent Mesh]
     F --> G[Configure Broker]
     G --> H[Setup AI Provider]
-    H --> I[Start SAM]
+    H --> I[Start Solace Agent Mesh]
     I --> J[Explore Agents]
     J --> K[Agent-to-Agent Communication]
 ```
