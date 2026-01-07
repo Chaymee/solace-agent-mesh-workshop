@@ -15,4 +15,3 @@ Credentials you will need later for Solace Agent Mesh Setup
 - Log in to your **Solace Cloud Console**
 - Navigate to **Cluster Manager → Select your Broker → Connect**
   <img src="../sam/broker-connection-details.png" alt="Broker Details" style="display: block; margin: 20px auto; max-width: 70%; box-shadow: 0 4px 8px rgba(0,0,0,0.2); border-radius: 4px;">
-- Keep **Broker Type** as *Existing Solace Pub/Sub+ Broker*
