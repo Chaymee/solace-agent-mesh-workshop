@@ -103,8 +103,9 @@ You will need the connection credentials from for the broker deployment method s
 
 >A Local Broker will start automatically with codespace deployment
 Credentials you will need later for Solace Agent Mesh Setup
->- Username: admin
->- Password: admin
+>- Username: default
+>- Password: default
+>- VPN Name: default
 >- Host: ws://localhost:8008
 
 - You can use the default values in the **Broker Setup** screen
