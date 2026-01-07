@@ -99,11 +99,16 @@ In the opened web page, configure SAM.
 > The namespace will act as the topic root for all events in SAM
 
 3. Configure connection to the Solace Broker
-You will need the connection credentials from [010-solace-broker-setup.md](./010-solace-broker-setup.md) for the broker deployment method selected for your workshop. 
+You will need the connection credentials from for the broker deployment method selected for your workshop. 
 
-- Copy connection details into the **Broker Setup** screen
-  <img src="../sam/sam-init-3.png" alt="Sam Initialize - 3" style="display: block; margin: 20px auto; max-width: 70%; box-shadow: 0 4px 8px rgba(0,0,0,0.2); border-radius: 4px;">
+>A Local Broker will start automatically with codespace deployment
+Credentials you will need later for Solace Agent Mesh Setup
+>- Username: admin
+>- Password: admin
+>- Host: ws://localhost:8008
 
+- You can use the default values in the **Broker Setup** screen
+  <img src="../sam/020-sam-init-3.png" alt="Sam Initialize - 3" style="display: block; margin: 20px auto; max-width: 70%; box-shadow: 0 4px 8px rgba(0,0,0,0.2); border-radius: 4px;">
 4. Configure your LLM endpoint, API Key, and Model name
 > The model of choice impacts the performance of your results and system behavior. A performant model is recommended for advanced use-cases
 
@@ -111,7 +116,7 @@ You will need the connection credentials from [010-solace-broker-setup.md](./010
 - Set **LLM Endpoint URL** to `https://lite-llm.mymaas.net`
 - Enter the **LLM API Key** shared during the workshop
 - Select **bedrock-anthropic-claude-3-5-sonnet** from the model dropdown
-  <img src="../sam/sam-init-4.png" alt="Sam Initialize - 4" style="display: block; margin: 20px auto; max-width: 70%; box-shadow: 0 4px 8px rgba(0,0,0,0.2); border-radius: 4px;">
+  <img src="../sam/020-sam-init-4.png" alt="Sam Initialize - 4" style="display: block; margin: 20px auto; max-width: 70%; box-shadow: 0 4px 8px rgba(0,0,0,0.2); border-radius: 4px;">
 
 5. Configure the orchestrator agent
 <img src="../sam/sam-init-5.png" alt="Sam Initialize - 5" style="display: block; margin: 20px auto; max-width: 70%; box-shadow: 0 4px 8px rgba(0,0,0,0.2); border-radius: 4px;">
