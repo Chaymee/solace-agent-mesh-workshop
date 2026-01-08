@@ -83,3 +83,7 @@ What agents do you have access to and what are their capabilities?
 <img src="../sam/sam-info-agents-new.png" alt="SAM Info Agents" style="display: block; margin: 20px auto; max-width: 70%; box-shadow: 0 4px 8px rgba(0,0,0,0.2); border-radius: 4px;">
 
 You can visualize agent interactions (e.g., **Orchestrator ↔ LLM**) by clicking the **network** icon below any chat response.
+
+---
+
+### [Next Section: 300-a2a-proxy-agents.md](./300-a2a-proxy-agents.md)

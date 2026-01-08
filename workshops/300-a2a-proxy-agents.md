@@ -152,4 +152,7 @@ Want to host your own? Consider building:
 - **Bug Bounty Hunter:** Analyzes code for security vulnerabilities
 - **Dad Joke Generator:** Because every mesh needs humor 
 
-> 💡 **Tip:** Deploy agents using AWS Lambda, Azure Functions, or simple Flask APIs
+> 💡 **Tip:** You can deploy your custom a2a agents on any platform you would like and use them with Solace Agent Mesh
+
+--- 
+### [Next Section: 400-mcp-server-agents.md](./400-mcp-server-agents.md)

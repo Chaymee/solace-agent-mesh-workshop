@@ -97,3 +97,5 @@ You will see an HTML report listing agentic capabilities available.
 <img src="../sam/sam-builtin-13.png" alt="SAM Built-in Tools" style="display: block; margin: 20px auto; max-width: 70%; box-shadow: 0 4px 8px rgba(0,0,0,0.2); border-radius: 4px;"> 
 
 ---
+
+### [Next Section: 200-adding-prebuilt-agents.md](./200-adding-prebuilt-agents.md)

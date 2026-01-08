@@ -55,3 +55,6 @@ You’ve successfully:
 - Explored and installed agents  
 
 > 🧠 Next step: Try deploying additional agents and experiment with **Agent-to-Agent (A2A)** communication.
+
+---
+### [Resources Section](./999-resources.md)
