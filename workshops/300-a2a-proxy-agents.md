@@ -13,34 +13,13 @@ An A2A proxy acts as a bridge between SAM and external agent frameworks. Instead
 
 ### Ways to add an A2A Agent
 1. Solace Agent Mesh add agent GUI
-2. Solace Agent Mesh agent configuration file
+2. Solace Agent Mesh agent via file configuration
 
 ### Add Your First A2A Agent - GUI
 
-1. In a new terminal, navigate to your SAM workspace:
-   ```bash
-   cd sam-bootcamp
-   source venv/bin/activate
-   ```
+Proxy creation i s currently not supported in the GUI Yet
 
-2. Create a proxy configuration:
-   ```bash
-   sam add proxy --gui
-   ```
-
-3. In the agent setup wizard:
-   - **Name:** `Strands Calculator Agent`
-   - **Agent Type:** Select **A2A Proxy**
-   - **Endpoint URL:** `<Your-AWS-Bedrock-Agent-Endpoint>` (provided during workshop)
-   - **Authentication:** Configure API key/credentials as needed
-   - **Description:** `Travel planning and recommendations agent`
-
-4. Save and restart agents:
-   ```bash
-   sam run
-   ```
-
-### Add Your First A2A Agent - Configuration File
+### Add Your First A2A Agent Via File Configuration
 
 1. In a new terminal, navigate to your SAM workspace:
    ```bash

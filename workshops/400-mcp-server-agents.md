@@ -111,6 +111,7 @@ tools:
           
 ```
 4. Save the file and apply the configuration:
+You will find a completed [MCP server yaml here](../artifacts/400-aws_documentation_agent.yaml) for reference or to copy if you run into issues
 You can run a single agent at a time or a list of agents by supplying their path after the run argument
 
   ```sh

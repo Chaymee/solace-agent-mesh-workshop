@@ -48,10 +48,12 @@ For example: The opened page URL `https://glorious-bassoon-j79qgqjxgrh996-5002.a
 - Use the default setting and click on `Next`
 <img src="../sam/sam-builtin-3.png" alt="SAM Built-in Tools" style="display: block; margin: 20px auto; max-width: 70%; box-shadow: 0 4px 8px rgba(0,0,0,0.2); border-radius: 4px;">
 
-- Click on `+ Add Tool` button and add the following tools
+- Click on `+ Add Tool` button
+
 <img src="../sam/sam-builtin-4.png" alt="SAM Built-in Tools" style="display: block; margin: 20px auto; max-width: 70%; box-shadow: 0 4px 8px rgba(0,0,0,0.2); border-radius: 4px;">
 
-- Review the list of tools available for use
+- Review the list of built-in tools available for use
+![alt text](image.png)
 <img src="../sam/sam-builtin-5.png" alt="SAM Built-in Tools" style="display: block; margin: 20px auto; max-width: 70%; box-shadow: 0 4px 8px rgba(0,0,0,0.2); border-radius: 4px;">
 
 - Select the following tools and add
