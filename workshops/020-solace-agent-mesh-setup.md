@@ -103,19 +103,23 @@ You will need the connection credentials from for the broker deployment method s
 
 >A Local Broker will start automatically with codespace deployment
 Credentials you will need later for Solace Agent Mesh Setup
->- Username: admin
->- Password: admin
+>- Username: default
+>- Password: default
+>- VPN Name: default
 >- Host: ws://localhost:8008
 
 - You can use the default values in the **Broker Setup** screen
+  
   <img src="../sam/020-sam-init-3.png" alt="Sam Initialize - 3" style="display: block; margin: 20px auto; max-width: 70%; box-shadow: 0 4px 8px rgba(0,0,0,0.2); border-radius: 4px;">
+  
 4. Configure your LLM endpoint, API Key, and Model name
 > The model of choice impacts the performance of your results and system behavior. A performant model is recommended for advanced use-cases
 
 - Choose **OpenAI Compatible Provider**
 - Set **LLM Endpoint URL** to `https://lite-llm.mymaas.net`
 - Enter the **LLM API Key** shared during the workshop
-- Select **bedrock-anthropic-claude-3-5-sonnet** from the model dropdown
+- Select **vertex-claude-4-5-sonnet** from the model dropdown
+
   <img src="../sam/020-sam-init-4.png" alt="Sam Initialize - 4" style="display: block; margin: 20px auto; max-width: 70%; box-shadow: 0 4px 8px rgba(0,0,0,0.2); border-radius: 4px;">
 
 5. Configure the orchestrator agent
