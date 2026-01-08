@@ -25,11 +25,11 @@ An A2A proxy acts as a bridge between SAM and external agent frameworks. Instead
 
 2. Create a proxy configuration:
    ```bash
-   sam add agent --gui
+   sam add proxy --gui
    ```
 
 3. In the agent setup wizard:
-   - **Name:** `AWS Travel Assistant`
+   - **Name:** `Strands Calculator Agent`
    - **Agent Type:** Select **A2A Proxy**
    - **Endpoint URL:** `<Your-AWS-Bedrock-Agent-Endpoint>` (provided during workshop)
    - **Authentication:** Configure API key/credentials as needed

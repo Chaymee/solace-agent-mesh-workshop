@@ -34,14 +34,8 @@ This workshop teaches you how to:
 
 ### Step-by-Step Setup
 
-#### 1. Solace Cloud Setup
-Follow the guide: [`solace-cloud-signup-workshop.md`](./solace-cloud-signup-workshop.md)
-- Create your Solace Cloud account
-- Set up a cloud Broker service
-- Configure connection details
-
-#### 2. Solace Agent Mesh Installation & Configuration
-Follow the guide: [`solace-agent-mesh-workshop.md`](./solace-agent-mesh-workshop.md)
+#### Solace Agent Mesh Installation & Configuration
+Follow the guide: [`solace-agent-mesh-setup.md`](./workshops/020-solace-agent-mesh-setup.md)
 - Launch GitHub Codespaces
 - Install Solace Agent Mesh CLI
 - Initialize Solace Agent Mesh with your broker
